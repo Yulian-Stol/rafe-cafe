@@ -627,6 +627,7 @@
 .modal-like
 	visibility: hidden
 	opacity: 0
+	display: flex
 	position: fixed
 	top: 0
 	left: 0
@@ -688,11 +689,11 @@
 			position: absolute
 			left: 50%
 			top: 50%
-			background: #fff
+			background: rgba(0, 0, 0, 1)
 			transition: all .6s
 			border-radius: 4px
 			height: 22px
-			width: 3px
+			width: 2px
 
 			&:first-child
 				transform: translate(-50%, -50%) rotate(45deg)
@@ -702,23 +703,41 @@
 
 	&__content
 		z-index: 1
-		// background-color: #fff
-		// box-shadow: 0 0 16px rgba(0, 0, 0, 0.29)
+		background-color: #fff
+		box-shadow: 0 0 16px rgba(0, 0, 0, 0.29)
 		width: 100%
-		max-width: 1200px
-		height: 100%
-		// padding: 50px
-		// border: 1px solid #8d8d8e
+		max-width: 350px
+		padding: 50px 10px
+		border-radius: 8px
 		margin: auto
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
-		gap: 10px
+		text-align: center
+		position: relative
 		+transition
 
-		&_sport
-			img
-				width: 100%
-				height: auto
+		img
+			margin-bottom: 30px
 
+		p
+			margin-bottom: 10px
+			font-size: 20px
+			font-weight: 600
+
+			&:last-child
+				font-size: 16px
+				font-weight: 400
+				color: rgba(151, 151, 151, 1)
+
+.main
+	display: grid
+	grid-template-columns: 50% 50%
+
+	+r(992)
+			grid-template-columns: 100%
+			grid-gap: 30px
+	
+	a
+		margin: auto

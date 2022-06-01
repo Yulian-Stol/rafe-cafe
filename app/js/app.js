@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 		};
 		headerFixed('.header', '.header--active');
-	
+
 	//----------------------HAMBURGER-----------------------
 		const hamburger = (hamburgerButton, hamburgerNav, hamburgerHeader) => {
 			const button = document.querySelector(hamburgerButton),
@@ -156,6 +156,4 @@ document.addEventListener("DOMContentLoaded", function() {
 	};
 	tabs('.tabs', '.tabs__item', '.tabs__wrap', 'tabs--active');
 
-
 });
-	
