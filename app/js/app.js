@@ -54,19 +54,19 @@ document.addEventListener("DOMContentLoaded", function() {
 									if (e.target) {
 										e.preventDefault();
 									}
-									item.classList.add('active');
+									item.classList.add('modal--active');
 								});
 							}
 
 							if (close) {
 								close.addEventListener('click', () => {
-									item.classList.remove('active');
+									item.classList.remove('modal--active');
 								});
 							}
 
 						item.addEventListener('click', (e) => {
 							if (e.target === item) {
-								item.classList.remove('active');
+								item.classList.remove('modal--active');
 							}
 						});
 					});

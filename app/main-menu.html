@@ -88,7 +88,7 @@
 
 				<h2>Супы</h2>
 
-				<div class="menu__item">
+				<div class="menu__item home__grid-menu">
 					<div class="menu__wrap">
 						<p class="menu__item_title">
 							Куриный крем-суп в хлебном
@@ -1111,6 +1111,90 @@
 			</div>
 		</div>
 	</section>
+	
+	<div class="modal" id="home__grid-menu">
+		<button class="close modal__close" type="button"></button>
+		<form action="#" class="modal__content">
+			<div class="modal__img">
+				<img src="img/modal.jpg" alt="">
+			</div>
+			<div class="modal__info">
+				<p class="modal__title">Салат “Брут”</p>
+				<p class="modal__subtitle">Маринованный папоротник, обжаренный с нежным филе телятины</p>
+
+				<hr>
+
+				<div class="modal__dish">
+					<p class="modal__dish_title">Выберите соус</p>
+					<div class="modal__dish_radio">
+						<input id="dish-1" type="radio" name="radio" value="1" checked>
+						<label for="dish-1">Кетчуп</label>
+					</div>
+
+					<div class="modal__dish_radio">
+						<input id="dish-2" type="radio" name="radio" value="2">
+						<label for="dish-3">Сырный</label>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="modal__dish">
+					<p class="modal__dish_title">Закуска</p>
+					<div class="modal__dish_checkbox">
+						<input id="dish-4" type="checkbox" name="radio" value="1" checked>
+						<label for="dish-4">Чечел</label>
+					</div>
+
+					<div class="modal__dish_checkbox">
+						<input id="dish-5" type="checkbox" name="radio" value="2">
+						<label for="dish-5">Сыр</label>
+					</div>
+
+					<div class="modal__dish_checkbox">
+						<input id="dish-6" type="checkbox" name="radio" value="3">
+						<label for="dish-6">Еще что-то</label>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="modal__dish">
+					<p class="modal__dish_title">Выберите соус</p>
+					<div class="modal__dish_checkbox">
+						<input id="dish-7" type="checkbox" name="checkbox" value="1" checked>
+						<label for="dish-7">Кетчуп </label>
+					</div>
+
+					<div class="modal__dish_checkbox">
+						<input id="dish-8" type="checkbox" name="checkbox" value="2">
+						<label for="dish-8">Сырный</label>
+					</div>
+
+					<div class="modal__dish_checkbox">
+						<input id="dish-9" type="checkbox" name="checkbox" value="3">
+						<label for="dish-9">Еще</label>
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal__btn">
+				<div class="modal__btn_price">
+					<p>Итого</p>
+					<p>9490 KZT</p>
+				</div>
+				<div class="modal__btn_wrap">
+					<div class="btn--plusminus">
+						<button><img src="img/Minus.svg" alt=""></button>
+						<span>2</span>
+						<button><img src="img/Plus.svg" alt=""></button>
+					</div>
+					<button class="btn btn--modalbuy">Выбрать</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
 
 </body>
 </html>
