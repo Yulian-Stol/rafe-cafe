@@ -78,6 +78,7 @@
 			border: 1px solid #fff
 			padding: 8px 10px
 			border-radius: 50%
+			font-family: $f_number
 
 // -----HAMBURGER-----
 .hamburger
@@ -180,9 +181,14 @@
 		gap: 15px
 
 	&__item
-		display: flex
-		flex-wrap: wrap
 		margin-bottom: 10px
+
+		p
+			white-space: nowrap
+
+	&__scroll
+		display: flex
+		overflow: scroll
 
 	&__btn-menu
 		display: none
@@ -196,6 +202,7 @@
 		bottom: -20px
 		left: 50%
 		transform: translate(-50%, 0)
+		font-weight: 500
 
 		img
 			+transition
@@ -215,6 +222,7 @@
 		.header__item
 			display: flex
 			margin-bottom: 20px
+			flex-direction: column
 
 .tabs
 	&__item
@@ -263,6 +271,7 @@
 		&_price
 			font-weight: 400
 			font-size: 13px
+			font-family: $f_number
 
 	&__img
 		border-radius: 8px
@@ -511,6 +520,7 @@
 			display: flex
 			justify-content: space-between
 			font-weight: 600
+			font-family: $f_number
 
 	&__bill
 		display: flex
@@ -536,6 +546,7 @@
 
 		&_price
 			font-weight: 400
+			font-family: $f_number
 
 		&_title
 			font-weight: 600
@@ -551,6 +562,7 @@
 //-----radio-----
 .form_radio_btn
 	display: inline-block
+	font-family: $f_number
 
 .form_radio_btn input[type=radio]
 	display: none
