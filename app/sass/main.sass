@@ -190,10 +190,35 @@
 		display: flex
 		overflow: scroll
 
+		&::-webkit-scrollbar
+			width: 0px
+			height: 2px
+			background: transparent
+
+		/* ползунок скроллбара */
+		&::-webkit-scrollbar-thumb
+			background-color: #e2e2e2ce
+
+		&::-webkit-scrollbar-thumb:hover
+			background: transparent
+
+		/* Стрелки */
+		&::-webkit-scrollbar-button:vertical:start:decrement
+			background-color: transparent
+
+		&::-webkit-scrollbar-button:vertical:end:increment
+			background-color: transparent
+
+		&::-webkit-scrollbar-button:horizontal:start:decrement
+			background-color: transparent
+
+		&::-webkit-scrollbar-button:horizontal:end:increment
+			background-color: transparent
+
 	&__btn-menu
 		display: none
 		background: rgba(255, 255, 255, 1)
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08)
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20)
 		backdrop-filter: blur(24px)
 		border-radius: 30px
 		width: fit-content
@@ -256,17 +281,28 @@
 
 		&_title
 			margin-bottom: 5px
-			text-overflow: ellipsis
-			overflow: hidden
 			font-weight: 600
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			overflow: hidden
+			max-width: 260px
+
+
+
 
 		&_subtitle
 			margin-bottom: 10px
 			color: rgba(151, 151, 151, 1)
 			font-size: 13px
-			text-overflow: ellipsis
-			overflow: hidden
 			font-weight: 500
+			font-weight: 600
+			max-width: 260px
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			overflow: hidden
+
 
 		&_price
 			font-weight: 400
@@ -276,6 +312,7 @@
 	&__img
 		border-radius: 8px
 		overflow: hidden
+		flex-shrink: 0
 
 .home
 	margin: auto 0
@@ -547,6 +584,7 @@
 		&_price
 			font-weight: 400
 			font-family: $f_number
+			flex-shrink: 0
 
 		&_title
 			font-weight: 600
@@ -558,6 +596,11 @@
 			grid-row-gap: 15px
 			margin-bottom: 25px
 			margin-top: 20px
+
+			+r(375)
+				grid-column-gap: 8px
+				grid-row-gap: 10px
+
 
 //-----radio-----
 .form_radio_btn
@@ -583,6 +626,9 @@
 	display: flex
 	justify-content: center
 	align-items: center
+
+	+r(375)
+		font-size: 12px
 
 /* Checked */
 .form_radio_btn input[type=radio]:checked + label
