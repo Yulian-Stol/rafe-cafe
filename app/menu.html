@@ -25,28 +25,21 @@
 					<img src="img/Vector.svg" alt="">
 				</a>
 
-				<p>Основное меню</p>
+				<p class="header__tea tea">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.7782 1.40804C7.10562 0.863986 7.89438 0.863987 8.22179 1.40804L9.8116 4.04975C9.92922 4.2452 10.1211 4.3846 10.3433 4.43607L13.347 5.13173C13.9656 5.275 14.2094 6.02515 13.7931 6.50466L11.772 8.83299C11.6224 9.00525 11.5491 9.2308 11.5689 9.45806L11.8354 12.5297C11.8903 13.1623 11.2522 13.6259 10.6676 13.3782L7.82862 12.1755C7.61858 12.0865 7.38142 12.0865 7.17138 12.1755L4.33244 13.3782C3.74777 13.6259 3.10965 13.1623 3.16455 12.5297L3.43113 9.45806C3.45086 9.2308 3.37757 9.00525 3.22803 8.83299L1.2069 6.50466C0.790648 6.02515 1.03439 5.275 1.65299 5.13173L4.65668 4.43607C4.87891 4.3846 5.07078 4.2452 5.1884 4.04975L6.7782 1.40804Z" stroke="black" stroke-width="1.5"/>
+					</svg>
+					На чай
+				</p>
 
 			</div>
 
-			<div class="buttons header__btn">
-				<!--<button class="btn">
-				<img src="img/notification.svg" alt="">
-					Позвать официанта
-				</button>-->
-
-				<button class="btn btn--wait"> <!--wait-->
-					<div>
-						<img src="img/waiter.svg" alt="">
-						<p>Иду..</p>
-					</div>
-					<span>13</span>
-				</button>
-
-				<button class="btn"> <!--bill-->
-					<img src="img/Report.svg" alt="">
-					Счет
-				</button>
+			<div class="header__page">
+				<div class="header__page_list">
+					<a href="main-menu.html">Основное меню</a>
+					<a href="bar-menu.html" class="header__page_active">Барное меню</a>
+				</div>
+				<hr>
 			</div>
 
 			<div class="header__btn-menu">
@@ -1269,6 +1262,26 @@
 			<img src="img/like.svg" alt="">
 			<p>Спасибо за оценку!</p>
 			<p>Вы делаете наш сервис лучше.  Приходите еще!</p>
+		</div>
+	</div>
+
+	<div class="modal" id="tea">
+		<button class="modal-like__close close close--tea" type="button"><span></span><span></span></button>
+		<div class="modal__content">
+			<div class="modal__padding container">
+				<img src="img/bottle.svg" alt="">
+				<p class="modal__tea_title">Вас обслуживал(а) <span>Дастан</span>.</p>
+				<p class="modal__tea_subtitle">Чаевые можно оставить по номеру ниже</p>
+				<hr>
+				<div class="modal__tea">
+					<img src="img/kaspi.png" alt="">
+					<div class="modal__tea_number">
+						<p>777 788 4502</p>
+						<button class="btn btn--tea">Скопировать номер</button>
+					</div>
+				</div>
+				<hr>
+			</div>
 		</div>
 	</div>
 

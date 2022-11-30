@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="tabs">
+<body class="tabs" id="sup">
 
 	<section class="header">
 		<div class="header__container container">
@@ -25,28 +25,39 @@
 					<img src="img/Vector.svg" alt="">
 				</a>
 
-				<p>Основное меню</p>
+				<p class="header__tea tea">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.7782 1.40804C7.10562 0.863986 7.89438 0.863987 8.22179 1.40804L9.8116 4.04975C9.92922 4.2452 10.1211 4.3846 10.3433 4.43607L13.347 5.13173C13.9656 5.275 14.2094 6.02515 13.7931 6.50466L11.772 8.83299C11.6224 9.00525 11.5491 9.2308 11.5689 9.45806L11.8354 12.5297C11.8903 13.1623 11.2522 13.6259 10.6676 13.3782L7.82862 12.1755C7.61858 12.0865 7.38142 12.0865 7.17138 12.1755L4.33244 13.3782C3.74777 13.6259 3.10965 13.1623 3.16455 12.5297L3.43113 9.45806C3.45086 9.2308 3.37757 9.00525 3.22803 8.83299L1.2069 6.50466C0.790648 6.02515 1.03439 5.275 1.65299 5.13173L4.65668 4.43607C4.87891 4.3846 5.07078 4.2452 5.1884 4.04975L6.7782 1.40804Z" stroke="black" stroke-width="1.5"/>
+					</svg>
+					На чай
+				</p>
 
 			</div>
 
-			<div class="buttons header__btn">
-				<!--<button class="btn">
-				<img src="img/notification.svg" alt="">
-					Позвать официанта
-				</button>-->
+			<button class="btn btn--waiter">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M10 2.08333C6.77834 2.08333 4.16667 4.695 4.16667 7.91666V11.641C4.16667 12.1458 3.82309 12.5859 3.33333 12.7083C2.84358 12.8308 2.5 13.2708 2.5 13.7756V14.0128C2.5 14.7881 3.12854 15.4167 3.90388 15.4167H16.0961C16.8715 15.4167 17.5 14.7881 17.5 14.0128V13.7756C17.5 13.2708 17.1564 12.8308 16.6667 12.7083C16.1769 12.5859 15.8333 12.1458 15.8333 11.641V7.91666C15.8333 4.695 13.2217 2.08333 10 2.08333Z" stroke="white" stroke-width="1.5"/>
+					<path d="M9.99992 18.3333C11.6107 18.3333 12.9166 17.2887 12.9166 16C12.9166 15.7986 12.8847 15.6031 12.8247 15.4167H7.17514C7.11516 15.6031 7.08325 15.7986 7.08325 16C7.08325 17.2887 8.38909 18.3333 9.99992 18.3333Z" stroke="white" stroke-width="1.5"/>
+				</svg>
+				Позвать официанта
+			</button>
 
-				<button class="btn btn--wait"> <!--wait-->
-					<div>
-						<img src="img/waiter.svg" alt="">
-						<p>Иду..</p>
-					</div>
-					<span>13</span>
-				</button>
+			<!--<button class="btn btn--wait"> 
+				<div>
+					<img src="img/waiter.svg" alt="">
+					<p>Официант идет..</p>
+				</div>
+				<span>13</span>
+			</button>-->
 
-				<button class="btn"> <!--bill-->
-					<img src="img/Report.svg" alt="">
-					Счет
-				</button>
+			<!--<button class="btn btn--modalbuy btn--menu">Подтвердить заказ <span>2</span></button>-->
+
+			<div class="header__page">
+				<div class="header__page_list">
+					<a href="main-menu.html" class="header__page_active">Основное меню</a>
+					<a href="bar-menu.html">Барное меню</a>
+				</div>
+				<hr>
 			</div>
 
 			<div class="header__btn-menu">
@@ -56,45 +67,45 @@
 
 			<div class="header__item">
 				<div class="header__scroll">
-					<div class="tabs__item">
+					<a href="#sup" class="tabs__item">
 						<p>Супы</p>
-					</div>
+					</a>
 
-					<div class="tabs__item">
+					<a href="#pasta" class="tabs__item">
 						<p>Паста и ризотто</p>
-					</div>
+					</a>
 
-					<div class="tabs__item">
+					<a href="#salat" class="tabs__item">
 						<p>Салаты</p>
-					</div>
+					</a>
 
-					<div class="tabs__item">
+					<a href="#pizza" class="tabs__item">
 						<p>Пицца</p>
-					</div>
+					</a>
 				</div>
 
 				<div class="header__scroll">
-					<div class="tabs__item">
+					<a href="#meat" class="tabs__item">
 						<p>Мясные блюда</p>
-					</div>
+					</a>
 	
-					<div class="tabs__item">
+					<a href="#fish" class="tabs__item">
 						<p>Рыба и морепродукты</p>
-					</div>
-
-					<div class="tabs__item">
-						<p>Top chef’s</p>
-					</div>
+					</a>
 				</div>
 
 				<div class="header__scroll">
-					<div class="tabs__item">
-						<p>Гарниры</p>
-					</div>
+					<a href="#chef" class="tabs__item">
+						<p>Top chef’s</p>
+					</a>
 
-					<div class="tabs__item">
+					<a href="#gar" class="tabs__item">
+						<p>Гарниры</p>
+					</a>
+
+					<a href="#desert" class="tabs__item">
 						<p>Десерты</p>
-					</div>
+					</a>
 				</div>
 			</div>
 
@@ -185,7 +196,7 @@
 							Куриный крем-суп в хлебном
 						</p>
 
-						<p class="menu__item_subtitle">
+						<p class="menu__item_subtitle" id="pasta">
 							Маринованный папоротник,обжаренный с нежным филе телятини
 						</p>
 
@@ -299,121 +310,7 @@
 							Куриный крем-суп в хлебном
 						</p>
 
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-			</div>
-
-			<div class="tabs__wrap">
-
-				<h2>Супы</h2>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
+						<p class="menu__item_subtitle" id="salat">
 							Маринованный папоротник,обжаренный с нежным филе телятини
 						</p>
 
@@ -527,7 +424,7 @@
 							Куриный крем-суп в хлебном
 						</p>
 
-						<p class="menu__item_subtitle">
+						<p class="menu__item_subtitle" id="pizza">
 							Маринованный папоротник,обжаренный с нежным филе телятини
 						</p>
 
@@ -561,7 +458,7 @@
 
 			<div class="tabs__wrap">
 
-				<h2>Супы</h2>
+				<h2>Пицца</h2>
 
 				<div class="menu__item">
 					<div class="menu__wrap">
@@ -641,121 +538,7 @@
 							Куриный крем-суп в хлебном
 						</p>
 
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-			</div>
-
-			<div class="tabs__wrap">
-
-				<h2>Супы</h2>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
+						<p class="menu__item_subtitle" id="meat">
 							Маринованный папоротник,обжаренный с нежным филе телятини
 						</p>
 
@@ -789,7 +572,7 @@
 
 			<div class="tabs__wrap">
 
-				<h2>Супы</h2>
+				<h2>Мясные блюда</h2>
 
 				<div class="menu__item">
 					<div class="menu__wrap">
@@ -869,121 +652,7 @@
 							Куриный крем-суп в хлебном
 						</p>
 
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-			</div>
-
-			<div class="tabs__wrap">
-
-				<h2>Супы</h2>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
-							Маринованный папоротник,обжаренный с нежным филе телятини
-						</p>
-
-						<p class="menu__item_price">9490 KZT</p>
-					</div>
-
-					<div class="menu__img">
-						<img src="img/menu-item.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="menu__item">
-					<div class="menu__wrap">
-						<p class="menu__item_title">
-							Куриный крем-суп в хлебном
-						</p>
-
-						<p class="menu__item_subtitle">
+						<p class="menu__item_subtitle" id="fish">
 							Маринованный папоротник,обжаренный с нежным филе телятини
 						</p>
 
@@ -1017,7 +686,349 @@
 
 			<div class="tabs__wrap">
 
-				<h2>Супы</h2>
+				<h2>Рыба и морепродукты</h2>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle" id="chef">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="tabs__wrap">
+
+				<h2>Top chef’s</h2>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle" id="gar">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="tabs__wrap">
+
+				<h2>Гарниры</h2>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle" id="desert">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="menu__item">
+					<div class="menu__wrap">
+						<p class="menu__item_title">
+							Куриный крем-суп в хлебном
+						</p>
+
+						<p class="menu__item_subtitle">
+							Маринованный папоротник,обжаренный с нежным филе телятини
+						</p>
+
+						<p class="menu__item_price">9490 KZT</p>
+					</div>
+
+					<div class="menu__img">
+						<img src="img/menu-item.jpg" alt="">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="tabs__wrap">
+
+				<h2>Десерты</h2>
 
 				<div class="menu__item">
 					<div class="menu__wrap">
@@ -1496,6 +1507,26 @@
 			<img src="img/like.svg" alt="">
 			<p>Спасибо за оценку!</p>
 			<p>Вы делаете наш сервис лучше. Приходите еще!</p>
+		</div>
+	</div>
+
+	<div class="modal" id="tea">
+		<button class="modal-like__close close close--tea" type="button"><span></span><span></span></button>
+		<div class="modal__content">
+			<div class="modal__padding container">
+				<img src="img/bottle.svg" alt="">
+				<p class="modal__tea_title">Вас обслуживал(а) <span>Дастан</span>.</p>
+				<p class="modal__tea_subtitle">Чаевые можно оставить по номеру ниже</p>
+				<hr>
+				<div class="modal__tea">
+					<img src="img/kaspi.png" alt="">
+					<div class="modal__tea_number">
+						<p>777 788 4502</p>
+						<button class="btn btn--tea">Скопировать номер</button>
+					</div>
+				</div>
+				<hr>
+			</div>
 		</div>
 	</div>
 
