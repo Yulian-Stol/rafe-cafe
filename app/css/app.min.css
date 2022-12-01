@@ -856,7 +856,6 @@ input, textarea, select {
     width: -moz-fit-content;
     width: fit-content;
     opacity: 0.6;
-    margin-left: auto;
     border-radius: 32px;
     cursor: pointer;
     -webkit-transition: all .6s;
@@ -951,6 +950,14 @@ input, textarea, select {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .header__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 5px; }
 
 .tabs__item {
   padding: 9px;
